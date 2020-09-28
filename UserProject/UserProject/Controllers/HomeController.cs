@@ -59,7 +59,6 @@ namespace UserProject.Controllers
             if (ModelState.IsValid)
             {
                 user.ArrivalTime = TimeSetting.SetTime(user.ArrivalHour,user.ArrivalDate);
-
                 user.ExitTime = null;
                 user.UserID = Guid.NewGuid();
                 Repository.AddUser(user);

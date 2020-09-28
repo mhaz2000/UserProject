@@ -51,10 +51,10 @@
         @Html.DisplayFor(modelItem => item.NationalCode)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.ArrivalTime)
+        @item.ArrivalTime.ToShamsi()
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.ExitTime)
+        @item.ExitTime.ToShamsi()
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.WorkingTime)
